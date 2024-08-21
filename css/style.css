@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&family=Geologica:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Libre+Caslon+Text&family=Montserrat:ital,wght@0,600;1,600&family=Poppins&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #d2cfbd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    padding: 2% 8%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav_logo {
+    width: 4rem;
+}
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 6%;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 600;
+}
+
+.nav-item.active a {
+    color:#202020;
+    border: 2px solid #892902;
+}
+
+.title {
+    text-align: center;
+}
+
+section {
+    position: relative;
+}
+
+.countdown-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-shrink: 0;
+    position: absolute;
+    transform: translate(-08%, -10%);
+    padding: 2%;
+
+}
+
+.text {
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    text-align: center;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+}
+
+#banner {
+    width: 50rem;
+    border-radius:8px;
+    margin: 5% 0 5%;
+    filter: grayscale(100%);
+    transition-duration: 0.7s;
+}
+
+#banner:hover {
+    filter: grayscale(0);
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list,
+    #navbar {
+        display: none;
+    }
+}
